@@ -14,5 +14,6 @@ class MusicBot(commands.Cog):
     async def ping(self, ctx):
         await ctx.send('Pong! ')
 
+
 def setup(client):
-    client.add_cog(Example(client))
+    client.add_cog(MusicBot(client))
